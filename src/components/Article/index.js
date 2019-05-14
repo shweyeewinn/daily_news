@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import { getArticleData } from '../../store/actions';
 import { bindActionCreators } from 'redux';
 
+//components
+import LikesCounter from './likes';
+
 class Article extends Component {
   componentDidMount() {
     //console.log(this.props.match.params.id);
@@ -34,6 +37,12 @@ class Article extends Component {
           src={`/images/articles/${articleData[0].img}`}
         />
         <div className="body_news">{articleData[0].body}</div>
+        <div>
+          <LikesCounter
+            likes={articleData[0].likes[0]}
+            dislikes={articleData[0].likes[1]}
+          />
+        </div>
       </div>
     ) : null;
 
