@@ -16,7 +16,7 @@ export function latestNews() {
 
 export function otherNews() {
   const request = axios
-    .get(`${URL_ARTICLES}?_order=desc&_start=2&_end=15`)
+    .get(`${URL_ARTICLES}?_order=desc&_start=2&_end=10`)
     .then(response => response.data);
   return {
     type: GET_OTHER,
