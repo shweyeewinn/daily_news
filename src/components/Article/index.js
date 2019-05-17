@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getArticleData } from '../../store/actions';
+import {
+  getArticleData,
+  handleArticleLikes,
+  clearArticleData
+} from '../../store/actions';
 import { bindActionCreators } from 'redux';
 
 //components
@@ -11,6 +15,26 @@ class Article extends Component {
     //console.log(this.props.match.params.id);
     this.props.getArticleData(this.props.match.params.id);
   }
+
+  componentWillUnmount() {
+    this.props.clearArticleData();
+  }
+  addLike = action => {
+    //console.log(action);
+    const id = this.props.match.params.id;
+    const data = this.props.articles.articleData[0];
+
+    const likes = data.likes[0];
+    const dislikes = data.likes[1];
+
+    const newLikes =
+      action === 'ADD' ? [likes + 1, dislikes] : [likes, dislikes + 1];
+
+    console.log(id, data, likes, dislikes, newLikes);
+
+    //go to dispatch
+    this.props.handleArticleLikes(newLikes, id);
+  };
 
   renderNews = ({ articleData }) =>
     articleData ? (
@@ -39,6 +63,8 @@ class Article extends Component {
         <div className="body_news">{articleData[0].body}</div>
         <div>
           <LikesCounter
+            //sending arguments from child component to parent component
+            addLike={args => this.addLike(args)}
             likes={articleData[0].likes[0]}
             dislikes={articleData[0].likes[1]}
           />
@@ -64,7 +90,10 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ getArticleData }, dispatch);
+  return bindActionCreators(
+    { getArticleData, handleArticleLikes, clearArticleData },
+    dispatch
+  );
 }
 
 export default connect(

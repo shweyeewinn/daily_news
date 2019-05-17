@@ -15,7 +15,7 @@ class Home extends Component {
 
   render() {
     const articles = this.props.articles;
-    //console.log(this.props);
+    console.log(this.props);
     return (
       <>
         <LatestNews latest={articles.latest} />

@@ -9,7 +9,10 @@
       "date": "21/12/2018",
       "author": "Jon Record",
       "views": 200,
-      "likes": [43, 32]
+      "likes": [
+        45,
+        34
+      ]
     },
     {
       "id": 2,
@@ -20,7 +23,10 @@
       "date": "21/12/2018",
       "author": "Mary Bottom",
       "views": 456,
-      "likes": [57, 7]
+      "likes": [
+        57,
+        7
+      ]
     },
     {
       "id": 3,
@@ -31,7 +37,10 @@
       "date": "22/12/2018",
       "author": "Aston Kutcher",
       "views": 678,
-      "likes": [345, 90]
+      "likes": [
+        345,
+        90
+      ]
     },
     {
       "id": 4,
@@ -42,7 +51,10 @@
       "date": "23/12/2018",
       "author": "Linda Writer",
       "views": 245,
-      "likes": [45, 9]
+      "likes": [
+        45,
+        9
+      ]
     },
     {
       "id": 5,
@@ -53,7 +65,10 @@
       "date": "24/12/2018",
       "author": "Jenny Roberts",
       "views": 890,
-      "likes": [234, 89]
+      "likes": [
+        234,
+        89
+      ]
     },
     {
       "id": 6,
@@ -64,7 +79,10 @@
       "date": "25/12/2018",
       "author": "Marlin Carson",
       "views": 123,
-      "likes": [567, 9]
+      "likes": [
+        567,
+        9
+      ]
     },
     {
       "id": 7,
@@ -75,7 +93,10 @@
       "date": "26/12/2018",
       "author": "Kala",
       "views": 237,
-      "likes": [12, 9]
+      "likes": [
+        12,
+        9
+      ]
     },
     {
       "id": 8,
@@ -86,7 +107,10 @@
       "date": "27/12/2018",
       "author": "Hector",
       "views": 237,
-      "likes": [12, 9]
+      "likes": [
+        12,
+        9
+      ]
     },
     {
       "id": 9,
@@ -97,7 +121,10 @@
       "date": "28/12/2018",
       "author": "Decland",
       "views": 237,
-      "likes": [12, 9]
+      "likes": [
+        12,
+        9
+      ]
     },
     {
       "id": 10,
@@ -108,7 +135,10 @@
       "date": "29/12/2018",
       "author": "Ye Maung",
       "views": 237,
-      "likes": [12, 9]
+      "likes": [
+        12,
+        9
+      ]
     },
     {
       "id": 11,
@@ -119,7 +149,10 @@
       "date": "30/12/2018",
       "author": "Shwe Yee",
       "views": 237,
-      "likes": [12, 9]
+      "likes": [
+        12,
+        9
+      ]
     }
   ]
 }
